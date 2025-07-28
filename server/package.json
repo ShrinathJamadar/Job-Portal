@@ -3,17 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-  "server": "nodemon --import ./config/instrument.js server.js",
-  "start": "node --import ./config/instrument.js server.js"
-},
-
-
-
+    "server": "nodemon server.js",
+    "start": "node server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
     "@sentry/node": "^9.42.0",
     "@sentry/profiling-node": "^9.42.0",
